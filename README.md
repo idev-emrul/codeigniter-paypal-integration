@@ -8,10 +8,10 @@ codeigniter-paypal-integration/.htaccess
 
 Now open .htaccess file and save the below code....
 
--RewriteEngine On
--RewriteCond %{REQUEST_FILENAME} !-f
--RewriteCond %{REQUEST_FILENAME} !-d
--RewriteRule ^(.*)$ index.php/$1 [L]
+--RewriteEngine On
+--RewriteCond %{REQUEST_FILENAME} !-f
+--RewriteCond %{REQUEST_FILENAME} !-d
+--RewriteRule ^(.*)$ index.php/$1 [L]
 
 --- To create paypal account for testing follow the belowe given steps
 
