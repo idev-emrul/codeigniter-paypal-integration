@@ -10,8 +10,11 @@ class Paypal extends CI_Controller{
 	 
 	function success(){
 		
-		// Get the transaction data
+		// ----Get the transaction data-----
 		$paypalInfo = $this->input->post();
+
+		echo "<pre>";
+		print_r($paypalInfo);
 
 		$data['item_name']= $paypalInfo['item_name'];
 		$data['item_number']= $paypalInfo['item_number'];

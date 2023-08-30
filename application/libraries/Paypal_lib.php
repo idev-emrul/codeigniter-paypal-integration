@@ -122,6 +122,8 @@ class Paypal_lib
 
 		// Log the POST variables
 		$text .= "IPN POST Vars from Paypal:\n";
+
+		print_r($this->ipn_data);
 		foreach ($this->ipn_data as $key=>$value)
 			$text .= "$key=$value, ";
 
